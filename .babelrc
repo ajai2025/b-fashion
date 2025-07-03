@@ -1,0 +1,4 @@
+// filepath: /home/ajai/Documents/projects/b-fashion/.babelrc
+{
+    "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
