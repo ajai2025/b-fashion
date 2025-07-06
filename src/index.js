@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services'; // Import the Services page
+import Contact from './pages/Contact'; // Add this import
 
 const App = () => {
     return (
@@ -15,6 +16,7 @@ const App = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
+                <Route path="/contact" element={<Contact />} /> {/* Add this line */}
             </Routes>
             <Footer />
         </Router>

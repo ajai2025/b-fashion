@@ -1,0 +1,132 @@
+.contact-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 32px 20px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.08);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.contact-hero {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.contact-hero h1 {
+    font-size: 2.5rem;
+    color: #1a237e;
+    margin-bottom: 8px;
+}
+
+.contact-hero p {
+    color: #444;
+    font-size: 1.15rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+.contact-address {
+    flex: 1 1 220px;
+    background: #f5f7fa;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(26,35,126,0.06);
+}
+
+.contact-address h2 {
+    color: #3949ab;
+    margin-bottom: 10px;
+}
+
+.contact-persons {
+    flex: 2 1 320px;
+}
+
+.contact-persons h2 {
+    color: #3949ab;
+    margin-bottom: 10px;
+}
+
+.contact-person-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.contact-person.card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #e3eafc;
+    padding: 18px 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(26,35,126,0.07);
+    min-width: 220px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.contact-person.card:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(26,35,126,0.13);
+}
+
+.contact-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(26,35,126,0.08);
+}
+
+.contact-role {
+    display: block;
+    color: #5c6bc0;
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+.contact-phone {
+    color: #1a237e;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.08rem;
+}
+
+.contact-phone:hover {
+    text-decoration: underline;
+}
+
+.contact-map {
+    margin-top: 36px;
+    text-align: center;
+}
+
+.contact-map h2 {
+    color: #3949ab;
+    margin-bottom: 16px;
+}
+
+.map-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(26,35,126,0.07);
+    margin-bottom: 10px;
+}
+
+.map-link {
+    color: #1a73e8;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.map-link:hover {
+    text-decoration: underline;
+}

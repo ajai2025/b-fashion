@@ -13,7 +13,7 @@ const Header = () => {
                     <li><Link to="/">Home</Link></li> {/* Use Link for navigation */}
                     <li><Link to="/about">About</Link></li> {/* Link to About page */}
                     <li><Link to="/services">Services</Link></li> {/* Add Services link */}
-                    <li><a href="#contact">Contact</a></li>
+                    <li><Link to="/contact">Contact</Link></li> {/* Change from <a href="#contact"> to Link */}
                 </ul>
             </nav>
         </header>
