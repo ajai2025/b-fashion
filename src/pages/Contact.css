@@ -1,11 +1,10 @@
 .contact-page {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 32px 20px;
-    background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 6px 32px rgba(0,0,0,0.08);
-    font-family: 'Segoe UI', Arial, sans-serif;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    padding: 32px 16px 0 16px;
+    box-sizing: border-box;
+    background: #f9f9f9;
 }
 
 .contact-hero {
@@ -16,7 +15,7 @@
 .contact-hero h1 {
     font-size: 2.5rem;
     color: #1a237e;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .contact-hero p {
@@ -24,65 +23,68 @@
     font-size: 1.15rem;
 }
 
-.contact-info {
+.contact-main {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
-    justify-content: space-between;
     margin-bottom: 36px;
+    justify-content: space-between;
 }
 
-.contact-address {
-    flex: 1 1 220px;
-    background: #f5f7fa;
-    border-radius: 10px;
-    padding: 24px;
-    box-shadow: 0 2px 8px rgba(26,35,126,0.06);
+.card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(26,35,126,0.08);
+    padding: 24px 28px;
+    margin-bottom: 24px;
+    flex: 1 1 340px;
 }
 
-.contact-address h2 {
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1 1 340px;
+    min-width: 320px;
+}
+
+.contact-address h2,
+.contact-persons h2,
+.contact-map h2 {
     color: #3949ab;
     margin-bottom: 10px;
 }
 
-.contact-persons {
-    flex: 2 1 320px;
-}
-
-.contact-persons h2 {
-    color: #3949ab;
-    margin-bottom: 10px;
+.contact-address address {
+    font-style: normal;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 0;
 }
 
 .contact-person-list {
     display: flex;
-    gap: 24px;
+    gap: 18px;
     flex-wrap: wrap;
 }
 
-.contact-person.card {
+.contact-person {
     display: flex;
     align-items: center;
-    gap: 16px;
-    background: #e3eafc;
-    padding: 18px 24px;
-    border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(26,35,126,0.07);
-    min-width: 220px;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-.contact-person.card:hover {
-    transform: translateY(-4px) scale(1.03);
-    box-shadow: 0 6px 24px rgba(26,35,126,0.13);
+    gap: 12px;
+    background: #f7f7f7;
+    padding: 10px 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(26,35,126,0.04);
+    min-width: 180px;
 }
 
 .contact-avatar {
-    width: 56px;
-    height: 56px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #fff;
-    box-shadow: 0 2px 8px rgba(26,35,126,0.08);
+    border: 2px solid #eee;
 }
 
 .contact-role {
@@ -104,13 +106,9 @@
 }
 
 .contact-map {
-    margin-top: 36px;
+    min-width: 320px;
+    flex: 1 1 340px;
     text-align: center;
-}
-
-.contact-map h2 {
-    color: #3949ab;
-    margin-bottom: 16px;
 }
 
 .map-container {
@@ -129,4 +127,76 @@
 
 .map-link:hover {
     text-decoration: underline;
+}
+
+.contact-form-section {
+    max-width: 600px;
+    margin: 0 auto 32px auto;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(26,35,126,0.08);
+    padding: 32px 28px;
+}
+
+.contact-form-section h2 {
+    color: #3949ab;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.contact-form input,
+.contact-form textarea {
+    flex: 1 1 180px;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #f7f7f7;
+    transition: border 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 1.5px solid #3949ab;
+    outline: none;
+}
+
+.contact-form button {
+    align-self: flex-end;
+    background: #3949ab;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 6px;
+    font-size: 1.08rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 8px;
+}
+
+.contact-form button:hover {
+    background: #1a237e;
+}
+
+@media (max-width: 900px) {
+    .contact-main {
+        flex-direction: column;
+        gap: 0;
+    }
+    .card {
+        margin-bottom: 24px;
+    }
 }
